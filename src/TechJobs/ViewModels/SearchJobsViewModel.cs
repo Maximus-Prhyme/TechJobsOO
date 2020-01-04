@@ -5,9 +5,9 @@ using TechJobs.Models;
 
 namespace TechJobs.ViewModels
 {
-    public class SearchJobsViewModel 
+    public class SearchJobsViewModel : BaseViewModel
     {
-        // TODO #7.1 - Extract members common to JobFieldsViewModel
+        // DONE #7.1 - Extract members common to JobFieldsViewModel
         // to BaseViewModel
 
         // The search results
@@ -26,7 +26,7 @@ namespace TechJobs.ViewModels
         // View title
         public string Title { get; set; } = "";
 
-        public SearchJobsViewModel()
+        public SearchJobsViewModel() : base()
         {
             // Populate the list of all columns
 
